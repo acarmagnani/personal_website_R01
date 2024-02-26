@@ -310,7 +310,7 @@ li {
 .experience-container-2 {
     left: calc( var(--container-w-center) );
     
-    top: calc( var(--grid)/2 + var(--grid)*82 );
+    top: calc( var(--grid)/2 + var(--grid)*85 );
 }
 
 /* contact */
