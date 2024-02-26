@@ -61,7 +61,7 @@ blockquote, q {
     content: "";
     height: 300%;   
     left: -50%;
-    opacity: 0.5;
+    opacity: .65;
     position: fixed;
     top: -110%;
     width: 300%;
