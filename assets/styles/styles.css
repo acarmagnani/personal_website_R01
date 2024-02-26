@@ -1,0 +1,458 @@
+/* RESET */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+
+ol,ul,li {
+    list-style: none;
+    padding-left: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    cursor: default;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+}
+caption, th, td {
+	text-align: left;
+	font-weight: normal;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: "";
+}
+blockquote, q {
+	quotes: "" "";
+}
+
+/* RESET */
+
+/* BACKGROUND */
+
+#Background:after {
+    animation: grain 10s steps(10) infinite;
+    background-image: url(../images/noise2.png);
+    content: "";
+    height: 300%;   
+    left: -50%;
+    opacity: 0.5;
+    position: fixed;
+    top: -110%;
+    width: 300%;
+}
+
+@keyframes grain {
+    0%, 100% { transform:translate(0, 0) }
+    10% { transform:translate(-5%, -10%) }
+    20% { transform:translate(-15%, 5%) }
+    30% { transform:translate(7%, -25%) }
+    40% { transform:translate(-5%, 25%) }
+    50% { transform:translate(-15%, 10%) }
+    60% { transform:translate(15%, 0%) }
+    70% { transform:translate(0%, 15%) }
+    80% { transform:translate(3%, 35%) }
+    90% { transform:translate(-10%, 10%) }
+}
+
+/* BACKGROUND */
+
+/* BODY */
+
+/* arrows */
+.top-right-arrow::after {
+    content: "\2197 \FE0E";
+}
+
+.top-arrow::after {
+    content: "\2191 \FE0E";
+}
+
+body {
+    font-family: "Input Sans", monospace;
+    color: var(--c-txt);
+
+    background: 
+    radial-gradient(circle, var(--c-grid) 2%, transparent 3%);
+    background-size: var(--grid) var(--grid); 
+    background-position: top center;
+
+    background-color: var(--c-bg);  
+}
+
+/* var */
+:root {    
+    /* transitions */
+    --def-duraton: 0.5s;
+
+    /* bg */
+    --c-bg: hsl(0, 0%, 10%);
+    --c-grid: rgba(190, 190, 190, 0.9);
+    --c-txt: white;
+
+    /* container */
+    --grid: 15px;
+    --container-w: calc(var(--grid)*16);
+    --container-w-center: calc( 50% - (var(--container-w)/2) );
+    --border: 1px;
+    --pad-top: 10px;
+    --pad-side: 10px;
+
+}
+
+/* fonts */
+h1 {
+    font-size: 1rem;
+    font-style: italic;
+}
+
+h2 {
+    font-size: .7rem;
+}
+
+b1 {
+    font-size: .5rem;
+}
+
+@media (min-width: 650px) {
+    :root {
+        --grid: 25px;
+        --pad-top: 20px;
+        --pad-side: 20px;
+    }
+
+    h1 {
+        font-size: 1.75rem;
+    }
+
+    h2 {
+        font-size: .9rem;
+    }
+
+    b1 {
+        font-size: .8rem;
+    }
+}
+
+li {
+    padding: 5px 0px;
+}
+
+/* page */
+.page {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.active {
+    opacity: 1;
+}
+
+/* BODY */
+
+/* ANIMATIONS */
+
+/* rotate */
+._rotate {
+    display: inline-block;
+    transition-duration: var(--def-duraton);
+	transition-property: transform;
+	
+	&:hover {	
+		transform: rotate(5deg);
+        /* text-decoration: underline; */
+	}
+}
+
+/* spread */
+._spread {
+    transition-duration: var(--def-duraton);
+    transition-property: letter-spacing;
+
+    &:hover {
+        letter-spacing: 3px;
+    }
+}
+
+/* fade in */
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+._fadein {
+    animation-name: fadein;
+    animation-fill-mode: both;
+    animation-duration: 1s;
+}
+
+._delay-1 {
+    animation-delay: .5s;
+}
+
+._delay-2 {
+    animation-delay: 2s;
+}
+
+._delay-3 {
+    animation-delay: 2.5s;
+}
+
+/* ANIMATIONS */
+
+/* CONTAINER */
+
+#Body {
+    position: relative;
+}
+
+.container {
+    position: absolute;
+    border: var(--border) dashed var(--c-txt);
+
+    box-sizing: border-box;
+
+    padding: var(--pad-top) var(--pad-side);
+    margin: 0;
+
+    width: var(--container-w);
+}
+
+/* CONTAINER */
+
+/* HEADER */
+
+.header-container {
+    left: var(--container-w-center);
+    
+    top: calc( var(--grid)/2 + var(--grid)*2 );
+}
+
+.header-content li {
+    padding: 0px 0px;
+}
+
+/* HEADER */
+
+/* CONTAINERS */
+
+/* lang */
+.lang-container {
+    width: calc(var(--grid)*6);
+
+    left: calc( var(--container-w-center) + (var(--grid)*12) );
+    
+    top: calc( var(--grid)/2 + var(--grid)*13 );
+}
+
+/* explore */
+.explore-container {
+    left: calc( var(--container-w-center) - (var(--grid)*2) );
+    
+    top: calc( var(--grid)/2 + var(--grid)*26 );
+}
+
+/* whoami */
+.whoami-container-1 {
+    left: calc( var(--container-w-center) );
+    
+    top: calc( var(--grid)/2 + var(--grid)*20 );
+}
+.whoami-container-2 {
+    left: calc( var(--container-w-center) - (var(--grid)*2) );
+    
+    top: calc( var(--grid)/2 + var(--grid)*40 );
+}
+
+/* projects */
+.project-container-1 {
+    left: calc( var(--container-w-center) );
+    
+    top: calc( var(--grid)/2 + var(--grid)*20 );
+}
+
+/* experience */
+.experience-container-1 {
+    left: calc( var(--container-w-center) );
+    
+    top: calc( var(--grid)/2 + var(--grid)*17 );
+}
+.experience-container-2 {
+    left: calc( var(--container-w-center) );
+    
+    top: calc( var(--grid)/2 + var(--grid)*75 );
+}
+
+/* contact */
+.contact-container-1 {
+    left: calc( var(--container-w-center) );
+    
+    top: calc( var(--grid)/2 + var(--grid)*22 );
+}
+.contact-container-2 {
+    left: calc( var(--container-w-center) );
+    
+    top: calc( var(--grid)/2 + var(--grid)*32 );
+}
+
+@media (min-width: 650px) {
+
+    /* lang */
+    .lang-container {
+        width: calc(var(--grid)*4);
+
+        left: calc( var(--container-w-center) + (var(--grid)*15 ) );
+
+        top: calc( var(--grid)/2 + var(--grid)*10 );
+    }
+
+    /* explore */
+    .explore-container {       
+        top: calc( var(--grid)/2 + var(--grid)*20 );
+    }
+
+    /* whoami */
+    .whoami-container-1 {
+        top: calc( var(--grid)/2 + var(--grid)*15 );
+    }
+    .whoami-container-2 {
+        left: calc( var(--container-w-center) - (var(--grid)*4) );
+        
+        top: calc( var(--grid)/2 + var(--grid)*15 );
+    }
+
+    /* projects */
+
+    /* experience */
+    
+    /* contact */
+}
+
+@media (min-width: 850px) {
+
+    /* lang */
+
+    /* explore */
+    
+    /* whoami */
+
+    /* projects */
+
+    /* experience */
+    
+    /* contact */
+}
+
+@media (min-width: 1250px) {
+
+    /* lang */
+    .lang-container {    
+        left: calc( var(--container-w-center) + (var(--grid)*28 ) );
+
+        top: calc( var(--grid)/2 + var(--grid)*6 );
+    }
+
+    /* explore */
+
+    /* whoami */
+    .whoami-container-1 {
+        left: calc( var(--container-w-center) + (var(--grid)*9) );
+
+        top: calc( var(--grid)/2 + var(--grid)*17 );
+    }
+    .whoami-container-2 {
+        left: calc( var(--container-w-center) - (var(--grid)*12) );
+        
+        top: calc( var(--grid)/2 + var(--grid)*29 );
+    }
+
+    /* projects */
+    .project-container-1 {
+        top: calc( var(--grid)/2 + var(--grid)*12 );
+    }
+
+    /* experience */
+    .experience-container-1 {
+        left: calc( var(--container-w-center) - (var(--grid)*15) );
+        
+        top: calc( var(--grid)/2 + var(--grid)*12 );
+    }
+    .experience-container-2 {
+        left: calc( var(--container-w-center) + (var(--grid)*10) );
+        
+        top: calc( var(--grid)/2 + var(--grid)*20 );
+    }
+
+    /* contact */
+    .contact-container-1 {
+        left: calc( var(--container-w-center) + (var(--grid)*15) );
+        
+        top: calc( var(--grid)/2 + var(--grid)*13 );
+    }
+    .contact-container-2 {
+        left: calc( var(--container-w-center) - (var(--grid)*15) );
+        
+        top: calc( var(--grid)/2 + var(--grid)*22 );
+    }
+}
+
+/* CONTAINERS */
+
+/* LANG */
+
+.lang-content {
+    display: flex;
+    justify-content: center;
+}
+
+.lang-pt {
+    display: none;
+}
+
+.lang-en {
+    display: block;
+}
+
+/* LANG */
+
+/* CONTACT */
+
+.contact-content li {
+    padding: 0px 0px;
+}
+
+.contact_title {
+    padding: 5px 0px;
+}
+
+/* CONTACT */
