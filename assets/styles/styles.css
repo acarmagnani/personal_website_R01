@@ -98,7 +98,7 @@ body {
     color: var(--c-txt);
 
     background: 
-    radial-gradient(circle, var(--c-grid) 0%, transparent 8%);
+    radial-gradient(circle, var(--c-grid) 0%, transparent 6%);
     background-size: var(--grid) var(--grid); 
     background-position: top center;
 
