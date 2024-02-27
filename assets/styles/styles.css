@@ -495,14 +495,14 @@ li {
 .precint-container-4 {
     left: calc( var(--container-w-center) );
     
-    top: calc( var(--grid)/2 + var(--grid)*95 );
+    top: calc( var(--grid)/2 + var(--grid)*97 );
 }
 
 /* gallery */
 .gallery-container-1 {
     left: calc( var(--container-w-center) );
     
-    top: calc( var(--grid)/2 + var(--grid)*30 );
+    top: calc( var(--grid)/2 + var(--grid)*28 );
 }
 .gallery-container-2 {
     left: calc( var(--container-w-center) );
@@ -577,7 +577,7 @@ li {
     .gallery-container-1 {
         left: calc( var(--container-w-center) - (var(--grid)*12) );
 
-        top: calc( var(--grid)/2 + var(--grid)*20 );
+        top: calc( var(--grid)/2 + var(--grid)*19 );
     }
     .gallery-container-2 {
         left: calc( var(--container-proj-w-center) + (var(--grid)*12) );
