@@ -121,7 +121,7 @@ body {
     --grid: 15px;
     --container-w: calc(var(--grid)*16);
     --container-w-center: calc( 50% - (var(--container-w)/2) );
-    --border: .8px;
+    --border: 1px;
     --pad-top: 10px;
     --pad-side: 10px;
 
@@ -154,7 +154,6 @@ b1 {
     :root {
         /* container */
         --grid: 25px;
-        --border: 1px;
         --pad-top: 20px;
         --pad-side: 20px;
     }
