@@ -119,11 +119,13 @@ body {
 
     /* container */
     --grid: 15px;
+    --border: 1px;
+    --pad: 10px;
+
     --container-w: calc(var(--grid)*16);
     --container-w-center: calc( 50% - (var(--container-w)/2) );
-    --border: 1px;
-    --pad-top: 10px;
-    --pad-side: 10px;
+    --container-proj-w: calc(var(--grid)*26);
+    --container-proj-w-center: calc( 50% - (var(--container-proj-w)/2) );
 
 }
 
@@ -154,8 +156,7 @@ b1 {
     :root {
         /* container */
         --grid: 25px;
-        --pad-top: 20px;
-        --pad-side: 20px;
+        --pad: 20px;
     }
 
     h1 {
@@ -256,7 +257,7 @@ li {
 
     box-sizing: border-box;
 
-    padding: var(--pad-top) var(--pad-side);
+    padding: var(--pad);
     margin: 0;
 
     width: var(--container-w);
@@ -312,7 +313,7 @@ li {
 .project-container-1 {
     left: calc( var(--container-w-center) );
     
-    top: calc( var(--grid)/2 + var(--grid)*20 );
+    top: calc( var(--grid)/2 + var(--grid)*17 );
 }
 
 /* experience */
@@ -367,7 +368,7 @@ li {
 
     /* projects */
     .project-container-1 {
-        top: calc( var(--grid)/2 + var(--grid)*15 );
+        top: calc( var(--grid)/2 + var(--grid)*14 );
     }
 
     /* experience */
@@ -382,21 +383,6 @@ li {
     .contact-container-2 {
         top: calc( var(--grid)/2 + var(--grid)*22 );
     }
-}
-
-@media (min-width: 850px) {
-
-    /* lang */
-
-    /* explore */
-    
-    /* whoami */
-
-    /* projects */
-
-    /* experience */
-    
-    /* contact */
 }
 
 @media (min-width: 1250px) {
@@ -475,3 +461,134 @@ li {
 }
 
 /* CONTACT */
+
+/* PROJECTS */
+
+.project-image img {
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.pad {
+    padding-bottom: var(--pad);
+}
+
+/* containers */
+
+/* precint */
+.precint-container-1 {
+    left: calc( var(--container-w-center) );
+    
+    top: calc( var(--grid)/2 + var(--grid)*17 );
+}
+.precint-container-2 {
+    left: calc( var(--container-w-center) );
+    
+    top: calc( var(--grid)/2 + var(--grid)*68 );
+}
+.precint-container-3 {
+    left: calc( var(--container-w-center) );
+    
+    top: calc( var(--grid)/2 + var(--grid)*50 );
+}
+.precint-container-4 {
+    left: calc( var(--container-w-center) );
+    
+    top: calc( var(--grid)/2 + var(--grid)*95 );
+}
+
+/* gallery */
+.gallery-container-1 {
+    left: calc( var(--container-w-center) );
+    
+    top: calc( var(--grid)/2 + var(--grid)*30 );
+}
+.gallery-container-2 {
+    left: calc( var(--container-w-center) );
+    
+    top: calc( var(--grid)/2 + var(--grid)*17 );
+}
+.gallery-container-3 {
+    left: calc( var(--container-w-center) );
+    
+    top: calc( var(--grid)/2 + var(--grid)*60 );
+}
+
+@media (min-width: 650px) {
+
+    /* precint */
+    .precint-container-2 {
+        top: calc( var(--grid)/2 + var(--grid)*55 );
+    }
+    .precint-container-3 {
+        top: calc( var(--grid)/2 + var(--grid)*37 );
+    }
+    .precint-container-4 {
+        top: calc( var(--grid)/2 + var(--grid)*72 );
+    }
+
+    /* gallery */
+    .gallery-container-1 {
+        left: calc( var(--container-w-center) - (var(--grid)*4) );
+    }
+    .gallery-container-2 {
+        width: var(--container-proj-w);
+
+        left: calc( var(--container-proj-w-center) );
+
+        top: calc( var(--grid)/2 + var(--grid)*14 );
+    }
+    .gallery-container-3 {
+        width: var(--container-proj-w);
+
+        left: calc( var(--container-proj-w-center) );
+
+        top: calc( var(--grid)/2 + var(--grid)*47 );
+    }
+
+}
+
+@media (min-width: 1250px) {
+
+    /* precint */
+    .precint-container-1 {
+        left: calc( var(--container-w-center) - (var(--grid)*16) );
+        
+        top: calc( var(--grid)/2 + var(--grid)*12 );
+    }
+    .precint-container-2 {
+        left: calc( var(--container-w-center) + (var(--grid)*16) );
+        
+        top: calc( var(--grid)/2 + var(--grid)*35 );
+    }
+    .precint-container-3 {
+        left: calc( var(--container-w-center) + (var(--grid)*3) );
+        
+        top: calc( var(--grid)/2 + var(--grid)*17 );
+    }
+    .precint-container-4 {
+        left: calc( var(--container-w-center) - (var(--grid)*12) );
+        
+        top: calc( var(--grid)/2 + var(--grid)*42 );
+    }
+
+    /* gallery */
+    .gallery-container-1 {
+        left: calc( var(--container-w-center) - (var(--grid)*12) );
+
+        top: calc( var(--grid)/2 + var(--grid)*20 );
+    }
+    .gallery-container-2 {
+        left: calc( var(--container-proj-w-center) + (var(--grid)*12) );
+
+        top: calc( var(--grid)/2 + var(--grid)*14 );
+    }
+    .gallery-container-3 {
+        left: calc( var(--container-proj-w-center) + (var(--grid)*10) );
+
+        top: calc( var(--grid)/2 + var(--grid)*30 );
+    }
+}
+
+/* PROJECTS */
