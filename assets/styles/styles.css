@@ -98,7 +98,7 @@ body {
     color: var(--c-txt);
 
     background: 
-    radial-gradient(circle, var(--c-grid) 1%, transparent 10%);
+    radial-gradient(circle, var(--c-grid) 0%, transparent 8%);
     background-size: var(--grid) var(--grid); 
     background-position: top center;
 
@@ -121,7 +121,7 @@ body {
     --grid: 15px;
     --container-w: calc(var(--grid)*16);
     --container-w-center: calc( 50% - (var(--container-w)/2) );
-    --border: 1px;
+    --border: .3px;
     --pad-top: 10px;
     --pad-side: 10px;
 
@@ -144,7 +144,7 @@ b1 {
 @media (min-width: 650px) {
     body {
         background: 
-        radial-gradient(circle, var(--c-grid) 1%, transparent 4%);
+        radial-gradient(circle, var(--c-grid) 0%, transparent 4%);
         background-size: var(--grid) var(--grid); 
         background-position: top center;
     
@@ -152,7 +152,9 @@ b1 {
     }
 
     :root {
+        /* container */
         --grid: 25px;
+        --border: 1px;
         --pad-top: 20px;
         --pad-side: 20px;
     }
