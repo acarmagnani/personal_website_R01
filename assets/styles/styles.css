@@ -98,12 +98,14 @@ body {
     color: var(--c-txt);
 
     background: 
-    radial-gradient(circle, var(--c-grid) 1%, transparent 3%);
+    radial-gradient(circle, var(--c-grid) 1%, transparent 15%);
     background-size: var(--grid) var(--grid); 
     background-position: top center;
 
     background-color: var(--c-bg);  
 }
+
+
 
 /* var */
 :root {    
@@ -112,7 +114,7 @@ body {
 
     /* bg */
     --c-bg: hsl(0, 0%, 10%);
-    --c-grid: rgba(228, 228, 228, 0.9);
+    --c-grid: rgba(241, 241, 241, 0.9);
     --c-txt: white;
 
     /* container */
@@ -140,6 +142,15 @@ b1 {
 }
 
 @media (min-width: 650px) {
+    body {
+        background: 
+        radial-gradient(circle, var(--c-grid) 1%, transparent 4%);
+        background-size: var(--grid) var(--grid); 
+        background-position: top center;
+    
+        background-color: var(--c-bg);  
+    }
+
     :root {
         --grid: 25px;
         --pad-top: 20px;
@@ -288,7 +299,7 @@ li {
 .whoami-container-1 {
     left: calc( var(--container-w-center) );
     
-    top: calc( var(--grid)/2 + var(--grid)*26 );
+    top: calc( var(--grid)/2 + var(--grid)*24 );
 }
 .whoami-container-2 {
     left: calc( var(--container-w-center) - (var(--grid)*2) );
