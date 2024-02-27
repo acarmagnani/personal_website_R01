@@ -57,7 +57,7 @@ blockquote, q {
 
 #Background:after {
     animation: grain 10s steps(10) infinite;
-    background-image: url(../images/noise2.png);
+    background-image: url(../images/bg/noise2.png);
     content: "";
     height: 300%;   
     left: -50%;
@@ -98,7 +98,7 @@ body {
     color: var(--c-txt);
 
     background: 
-    radial-gradient(circle, var(--c-grid) 2%, transparent 3%);
+    radial-gradient(circle, var(--c-grid) 1%, transparent 3%);
     background-size: var(--grid) var(--grid); 
     background-position: top center;
 
@@ -112,7 +112,7 @@ body {
 
     /* bg */
     --c-bg: hsl(0, 0%, 10%);
-    --c-grid: rgba(190, 190, 190, 0.9);
+    --c-grid: rgba(228, 228, 228, 0.9);
     --c-txt: white;
 
     /* container */
@@ -167,10 +167,12 @@ li {
 .page {
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
+    display: none;
 }
 
 .active {
     opacity: 1;
+    display: block;
 }
 
 /* BODY */
@@ -213,19 +215,19 @@ li {
 ._fadein {
     animation-name: fadein;
     animation-fill-mode: both;
-    animation-duration: 1s;
+    animation-duration: 2s;
 }
 
 ._delay-1 {
-    animation-delay: .5s;
+    animation-delay: .75s;
 }
 
 ._delay-2 {
-    animation-delay: 2s;
+    animation-delay: 1.5s;
 }
 
 ._delay-3 {
-    animation-delay: 2.5s;
+    animation-delay: 2.25s;
 }
 
 /* ANIMATIONS */
@@ -286,12 +288,12 @@ li {
 .whoami-container-1 {
     left: calc( var(--container-w-center) );
     
-    top: calc( var(--grid)/2 + var(--grid)*20 );
+    top: calc( var(--grid)/2 + var(--grid)*26 );
 }
 .whoami-container-2 {
     left: calc( var(--container-w-center) - (var(--grid)*2) );
     
-    top: calc( var(--grid)/2 + var(--grid)*40 );
+    top: calc( var(--grid)/2 + var(--grid)*18 );
 }
 
 /* projects */
@@ -343,19 +345,31 @@ li {
 
     /* whoami */
     .whoami-container-1 {
-        top: calc( var(--grid)/2 + var(--grid)*15 );
+        top: calc( var(--grid)/2 + var(--grid)*17 );
     }
     .whoami-container-2 {
         left: calc( var(--container-w-center) - (var(--grid)*4) );
         
-        top: calc( var(--grid)/2 + var(--grid)*15 );
+        top: calc( var(--grid)/2 + var(--grid)*11 );
     }
 
     /* projects */
+    .project-container-1 {
+        top: calc( var(--grid)/2 + var(--grid)*15 );
+    }
 
     /* experience */
+    .experience-container-2 {
+        top: calc( var(--grid)/2 + var(--grid)*60 );
+    }
     
     /* contact */
+    .contact-container-1 {
+        top: calc( var(--grid)/2 + var(--grid)*13 );
+    }
+    .contact-container-2 {
+        top: calc( var(--grid)/2 + var(--grid)*22 );
+    }
 }
 
 @media (min-width: 850px) {
@@ -397,13 +411,10 @@ li {
     }
 
     /* projects */
-    .project-container-1 {
-        top: calc( var(--grid)/2 + var(--grid)*12 );
-    }
 
     /* experience */
     .experience-container-1 {
-        left: calc( var(--container-w-center) - (var(--grid)*15) );
+        left: calc( var(--container-w-center) - (var(--grid)*16) );
         
         top: calc( var(--grid)/2 + var(--grid)*12 );
     }
@@ -416,13 +427,9 @@ li {
     /* contact */
     .contact-container-1 {
         left: calc( var(--container-w-center) + (var(--grid)*15) );
-        
-        top: calc( var(--grid)/2 + var(--grid)*13 );
     }
     .contact-container-2 {
         left: calc( var(--container-w-center) - (var(--grid)*15) );
-        
-        top: calc( var(--grid)/2 + var(--grid)*22 );
     }
 }
 
