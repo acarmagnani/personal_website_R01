@@ -169,7 +169,7 @@ b1 {
     }
 
     b1 {
-        font-size: .65rem;
+        font-size: .7rem;
     }
 }
 
@@ -493,6 +493,28 @@ li {
 
 /* containers */
 
+/* womens */
+.womens_house-container-1 {
+    left: calc( var(--container-w-center) );
+    
+    top: calc( var(--grid)/2 + var(--grid)*28 );
+}
+.womens_house-container-2 {
+    left: calc( var(--container-w-center) );
+    
+    top: calc( var(--grid)/2 + var(--grid)*17 );
+}
+.womens_house-container-3 {
+    left: calc( var(--container-w-center) );
+    
+    top: calc( var(--grid)/2 + var(--grid)*49 );
+}
+.womens_house-container-4 {
+    left: calc( var(--container-w-center) );
+    
+    top: calc( var(--grid)/2 + var(--grid)*70 );
+}
+
 /* serengeti_village */
 .serengeti_village-container-1 {
     left: calc( var(--container-w-center) );
@@ -502,17 +524,17 @@ li {
 .serengeti_village-container-2 {
     left: calc( var(--container-w-center) );
     
-    top: calc( var(--grid)/2 + var(--grid)*57 );
+    top: calc( var(--grid)/2 + var(--grid)*60 );
 }
 .serengeti_village-container-3 {
     left: calc( var(--container-w-center) );
     
-    top: calc( var(--grid)/2 + var(--grid)*85 );
+    top: calc( var(--grid)/2 + var(--grid)*88 );
 }
 .serengeti_village-container-4 {
     left: calc( var(--container-w-center) );
     
-    top: calc( var(--grid)/2 + var(--grid)*95 );
+    top: calc( var(--grid)/2 + var(--grid)*98 );
 }
 
 /* precint */
@@ -556,15 +578,37 @@ li {
 
 @media (min-width: 650px) {
 
+    /* womens */
+    .womens_house-container-1 {
+        left: calc( var(--container-w-center) + var(--grid)*4 );
+        
+        top: calc( var(--grid)/2 + var(--grid)*35 );
+    }
+    .womens_house-container-2 {
+        width: var(--container-proj-w);
+        
+        left: calc( var(--container-proj-w-center) );
+    }
+    .womens_house-container-3 {
+        width: var(--container-proj-w);
+        
+        left: calc( var(--container-proj-w-center) );
+    }
+    .womens_house-container-4 {
+        width: var(--container-proj-w);
+        
+        left: calc( var(--container-proj-w-center) );
+
+        top: calc( var(--grid)/2 + var(--grid)*80 );
+    }
+
     /* serengeti_village */
     .serengeti_village-container-1 {
-        left: calc( var(--container-w-center) );
+        left: calc( var(--container-w-center) + var(--grid)*2 );
         
         top: calc( var(--grid)/2 + var(--grid)*13 );
     }
     .serengeti_village-container-2 {
-        left: calc( var(--container-w-center) );
-        
         top: calc( var(--grid)/2 + var(--grid)*37 );
     }
     .serengeti_village-container-3 {
@@ -575,13 +619,15 @@ li {
         top: calc( var(--grid)/2 + var(--grid)*65 );
     }
     .serengeti_village-container-4 {
-        left: calc( var(--container-w-center) );
-        
+        left: calc( var(--container-w-center) - var(--grid)*4 );
+
         top: calc( var(--grid)/2 + var(--grid)*82 );
     }
 
     /* precint */
     .precint-container-2 {
+        left: calc( var(--container-w-center) - (var(--grid)*4) );
+
         top: calc( var(--grid)/2 + var(--grid)*55 );
     }
     .precint-container-3 {
@@ -598,6 +644,8 @@ li {
     /* gallery */
     .gallery-container-1 {
         left: calc( var(--container-w-center) - (var(--grid)*4) );
+
+        top: calc( var(--grid)/2 + var(--grid)*30 );
     }
     .gallery-container-2 {
         width: var(--container-proj-w);
@@ -617,6 +665,24 @@ li {
 }
 
 @media (min-width: 1250px) {
+
+    /* womens */
+    .womens_house-container-1 {
+        left: calc( var(--container-w-center) + var(--grid)*15 );
+        
+        top: calc( var(--grid)/2 + var(--grid)*19 );
+    }
+    .womens_house-container-2 {
+        left: calc( var(--container-proj-w-center) - var(--grid)*7 );
+    }
+    .womens_house-container-3 {
+        left: calc( var(--container-proj-w-center) + var(--grid)*12 );
+
+        top: calc( var(--grid)/2 + var(--grid)*35 );
+    }
+    .womens_house-container-4 {
+        top: calc( var(--grid)/2 + var(--grid)*67 );
+    }
 
     /* serengeti_village */
     .serengeti_village-container-1 {
