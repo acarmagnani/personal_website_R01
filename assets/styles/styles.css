@@ -177,15 +177,15 @@ b1 {
 
     /* fonts */
     h1 {
-        font-size: 1.75rem;
+        font-size: 1.65rem;
     }
 
     h2 {
-        font-size: .9rem;
+        font-size: .8rem;
     }
 
     b1 {
-        font-size: .8rem;
+        font-size: .75rem;
     }
 }
 
@@ -493,6 +493,38 @@ li {
 
 /* containers */
 
+/* everyday_complex */
+.everyday_complex-container-1 {
+    left: calc( var(--container-w-center) );
+    
+    top: calc( var(--grid)/2 + var(--grid)*38 );
+}
+.everyday_complex-container-2 {
+    left: calc( var(--container-w-center) );
+    
+    top: calc( var(--grid)/2 + var(--grid)*80 );
+}
+.everyday_complex-container-3 {
+    left: calc( var(--container-w-center) );
+    
+    top: calc( var(--grid)/2 + var(--grid)*160 );
+}
+.everyday_complex-container-4 {
+    left: calc( var(--container-w-center) );
+    
+    top: calc( var(--grid)/2 + var(--grid)*17 );
+}
+.everyday_complex-container-5 {
+    left: calc( var(--container-w-center) );
+    
+    top: calc( var(--grid)/2 + var(--grid)*117 );
+}
+.everyday_complex-container-6 {
+    left: calc( var(--container-w-center) );
+    
+    top: calc( var(--grid)/2 + var(--grid)*185 );
+}
+
 /* womens */
 .womens_house-container-1 {
     left: calc( var(--container-w-center) );
@@ -577,6 +609,38 @@ li {
 }
 
 @media (min-width: 650px) {
+
+    /* everyday_complex */
+    .everyday_complex-container-1 {     
+        top: calc( var(--grid)/2 + var(--grid)*50 );
+    }
+    .everyday_complex-container-2 {
+        width: var(--container-proj-w);
+        
+        left: calc( var(--container-proj-w-center) );
+        
+        top: calc( var(--grid)/2 + var(--grid)*75 );
+    }
+    .everyday_complex-container-3 {   
+        left: calc( var(--container-w-center) - var(--grid)*4 );
+
+        top: calc( var(--grid)/2 + var(--grid)*155 );
+    }
+    .everyday_complex-container-4 {
+        width: var(--container-proj-w);
+        
+        left: calc( var(--container-proj-w-center) );
+    }
+    .everyday_complex-container-5 {
+        top: calc( var(--grid)/2 + var(--grid)*113 );
+    }
+    .everyday_complex-container-6 {
+        width: var(--container-proj-w);
+        
+        left: calc( var(--container-proj-w-center) );
+
+        top: calc( var(--grid)/2 + var(--grid)*180 );
+    }
 
     /* womens */
     .womens_house-container-1 {
@@ -666,6 +730,34 @@ li {
 
 @media (min-width: 1250px) {
 
+    /* everyday_complex */
+    .everyday_complex-container-1 {  
+        left: calc( var(--container-w-center) + var(--grid)*15 );
+
+        top: calc( var(--grid)/2 + var(--grid)*20 );
+    }
+    .everyday_complex-container-2 {       
+        top: calc( var(--grid)/2 + var(--grid)*45 );
+    }
+    .everyday_complex-container-3 {   
+        left: calc( var(--container-w-center) + var(--grid)*15 );
+
+        top: calc( var(--grid)/2 + var(--grid)*85 );
+    }
+    .everyday_complex-container-4 {       
+        left: calc( var(--container-proj-w-center) - var(--grid)*10 );
+
+        top: calc( var(--grid)/2 + var(--grid)*11 );
+    }
+    .everyday_complex-container-5 {
+        left: calc( var(--container-w-center) - var(--grid)*3 );
+
+        top: calc( var(--grid)/2 + var(--grid)*80 );
+    }
+    .everyday_complex-container-6 {
+        top: calc( var(--grid)/2 + var(--grid)*122 );
+    }
+
     /* womens */
     .womens_house-container-1 {
         left: calc( var(--container-w-center) + var(--grid)*15 );
@@ -688,7 +780,7 @@ li {
     .serengeti_village-container-1 {
         left: calc( var(--container-w-center) + (var(--grid)*17) );
     }
-    .serengeti_village-container-2 {       
+    .serengeti_village-container-2 {
         top: calc( var(--grid)/2 + var(--grid)*11 );
     }
     .serengeti_village-container-3 {
