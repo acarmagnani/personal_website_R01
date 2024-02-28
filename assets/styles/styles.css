@@ -159,6 +159,23 @@ b1 {
         --pad: 20px;
     }
 
+    /* fonts */
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: .75rem;
+    }
+
+    b1 {
+        font-size: .65rem;
+    }
+}
+
+@media (min-width: 1250px) {
+
+    /* fonts */
     h1 {
         font-size: 1.75rem;
     }
@@ -476,6 +493,28 @@ li {
 
 /* containers */
 
+/* serengeti_village */
+.serengeti_village-container-1 {
+    left: calc( var(--container-w-center) );
+    
+    top: calc( var(--grid)/2 + var(--grid)*17 );
+}
+.serengeti_village-container-2 {
+    left: calc( var(--container-w-center) );
+    
+    top: calc( var(--grid)/2 + var(--grid)*57 );
+}
+.serengeti_village-container-3 {
+    left: calc( var(--container-w-center) );
+    
+    top: calc( var(--grid)/2 + var(--grid)*85 );
+}
+.serengeti_village-container-4 {
+    left: calc( var(--container-w-center) );
+    
+    top: calc( var(--grid)/2 + var(--grid)*95 );
+}
+
 /* precint */
 .precint-container-1 {
     left: calc( var(--container-w-center) );
@@ -517,6 +556,30 @@ li {
 
 @media (min-width: 650px) {
 
+    /* serengeti_village */
+    .serengeti_village-container-1 {
+        left: calc( var(--container-w-center) );
+        
+        top: calc( var(--grid)/2 + var(--grid)*13 );
+    }
+    .serengeti_village-container-2 {
+        left: calc( var(--container-w-center) );
+        
+        top: calc( var(--grid)/2 + var(--grid)*37 );
+    }
+    .serengeti_village-container-3 {
+        width: var(--container-proj-w);
+        
+        left: calc( var(--container-proj-w-center) );
+        
+        top: calc( var(--grid)/2 + var(--grid)*65 );
+    }
+    .serengeti_village-container-4 {
+        left: calc( var(--container-w-center) );
+        
+        top: calc( var(--grid)/2 + var(--grid)*82 );
+    }
+
     /* precint */
     .precint-container-2 {
         top: calc( var(--grid)/2 + var(--grid)*55 );
@@ -525,6 +588,10 @@ li {
         top: calc( var(--grid)/2 + var(--grid)*37 );
     }
     .precint-container-4 {
+        width: var(--container-proj-w);
+        
+        left: calc( var(--container-proj-w-center) );
+
         top: calc( var(--grid)/2 + var(--grid)*72 );
     }
 
@@ -550,6 +617,24 @@ li {
 }
 
 @media (min-width: 1250px) {
+
+    /* serengeti_village */
+    .serengeti_village-container-1 {
+        left: calc( var(--container-w-center) + (var(--grid)*17) );
+    }
+    .serengeti_village-container-2 {       
+        top: calc( var(--grid)/2 + var(--grid)*11 );
+    }
+    .serengeti_village-container-3 {
+        left: calc( var(--container-proj-w-center) + (var(--grid)*5) );
+        
+        top: calc( var(--grid)/2 + var(--grid)*39 );
+    }
+    .serengeti_village-container-4 {
+        left: calc( var(--container-w-center) - (var(--grid)*17) );
+        
+        top: calc( var(--grid)/2 + var(--grid)*15 );
+    }
 
     /* precint */
     .precint-container-1 {
