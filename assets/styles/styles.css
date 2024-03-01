@@ -370,7 +370,7 @@ li {
 
     /* explore */
     .explore-container {       
-        top: calc( var(--grid)/2 + var(--grid)*20 );
+        top: calc( var(--grid)/2 + var(--grid)*17 );
     }
 
     /* whoami */
@@ -395,10 +395,10 @@ li {
     
     /* contact */
     .contact-container-1 {
-        top: calc( var(--grid)/2 + var(--grid)*13 );
+        top: calc( var(--grid)/2 + var(--grid)*14 );
     }
     .contact-container-2 {
-        top: calc( var(--grid)/2 + var(--grid)*22 );
+        top: calc( var(--grid)/2 + var(--grid)*21 );
     }
 }
 
@@ -417,15 +417,18 @@ li {
     .whoami-container-1 {
         left: calc( var(--container-w-center) + (var(--grid)*9) );
 
-        top: calc( var(--grid)/2 + var(--grid)*17 );
+        top: calc( var(--grid)/2 + var(--grid)*13 );
     }
     .whoami-container-2 {
         left: calc( var(--container-w-center) - (var(--grid)*12) );
         
-        top: calc( var(--grid)/2 + var(--grid)*29 );
+        top: calc( var(--grid)/2 + var(--grid)*24 );
     }
 
     /* projects */
+    .project-container-1 {
+        top: calc( var(--grid)/2 + var(--grid)*10 );
+    }
 
     /* experience */
     .experience-container-1 {
@@ -442,9 +445,13 @@ li {
     /* contact */
     .contact-container-1 {
         left: calc( var(--container-w-center) + (var(--grid)*15) );
+
+        top: calc( var(--grid)/2 + var(--grid)*11 );
     }
     .contact-container-2 {
         left: calc( var(--container-w-center) - (var(--grid)*15) );
+
+        top: calc( var(--grid)/2 + var(--grid)*18 );
     }
 }
 
@@ -492,6 +499,13 @@ li {
 }
 
 /* containers */
+
+/* wip */
+.wip-container {
+    left: calc( var(--container-w-center) );
+    
+    top: calc( var(--grid)/2 + var(--grid)*18 );
+}
 
 /* everyday_complex */
 .everyday_complex-container-1 {
