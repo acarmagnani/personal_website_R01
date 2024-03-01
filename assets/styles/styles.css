@@ -561,6 +561,38 @@ li {
     top: calc( var(--grid)/2 + var(--grid)*70 );
 }
 
+/* pier */
+.pier_complex-container-1 {
+    left: calc( var(--container-w-center) );
+    
+    top: calc( var(--grid)/2 + var(--grid)*20 );
+}
+.pier_complex-container-2 {
+    left: calc( var(--container-w-center) );
+    
+    top: calc( var(--grid)/2 + var(--grid)*60 );
+}
+.pier_complex-container-3 {
+    left: calc( var(--container-w-center) );
+    
+    top: calc( var(--grid)/2 + var(--grid)*95 );
+}
+.pier_complex-container-4 {
+    left: calc( var(--container-w-center) );
+    
+    top: calc( var(--grid)/2 + var(--grid)*135 );
+}
+.pier_complex-container-5 {
+    left: calc( var(--container-w-center) );
+    
+    top: calc( var(--grid)/2 + var(--grid)*120 );
+}
+.pier_complex-container-6 {
+    left: calc( var(--container-w-center) );
+    
+    top: calc( var(--grid)/2 + var(--grid)*180 );
+}
+
 /* serengeti_village */
 .serengeti_village-container-1 {
     left: calc( var(--container-w-center) );
@@ -680,6 +712,36 @@ li {
         top: calc( var(--grid)/2 + var(--grid)*80 );
     }
 
+    /* pier */
+    .pier_complex-container-1 {    
+        left: calc( var(--container-w-center) + var(--grid)*4);
+
+        top: calc( var(--grid)/2 + var(--grid)*15 );
+    }
+    .pier_complex-container-2 {
+        top: calc( var(--grid)/2 + var(--grid)*50 );
+    }
+    .pier_complex-container-3 {
+        top: calc( var(--grid)/2 + var(--grid)*77 );
+    }
+    .pier_complex-container-4 {
+        left: calc( var(--container-w-center) - var(--grid)*3);
+        
+        top: calc( var(--grid)/2 + var(--grid)*120 );
+    }
+    .pier_complex-container-5 {
+        width: var(--container-proj-w);
+        
+        left: calc( var(--container-proj-w-center) );
+        
+        top: calc( var(--grid)/2 + var(--grid)*100 );
+    }
+    .pier_complex-container-6 {
+        left: calc( var(--container-w-center) );
+        
+        top: calc( var(--grid)/2 + var(--grid)*150);
+    }
+
     /* serengeti_village */
     .serengeti_village-container-1 {
         left: calc( var(--container-w-center) + var(--grid)*2 );
@@ -788,6 +850,33 @@ li {
     }
     .womens_house-container-4 {
         top: calc( var(--grid)/2 + var(--grid)*67 );
+    }
+
+    /* pier */
+    .pier_complex-container-2 {
+        left: calc( var(--container-w-center) - var(--grid)*13);
+
+        top: calc( var(--grid)/2 + var(--grid)*23 );
+    }
+    .pier_complex-container-3 {
+        left: calc( var(--container-w-center) - var(--grid)*15);
+
+        top: calc( var(--grid)/2 + var(--grid)*45 );
+    }
+    .pier_complex-container-4 {
+        left: calc( var(--container-w-center) + var(--grid)*9);
+        
+        top: calc( var(--grid)/2 + var(--grid)*70 );
+    }
+    .pier_complex-container-5 {
+        left: calc( var(--container-proj-w-center) + var(--grid)*10 );
+        
+        top: calc( var(--grid)/2 + var(--grid)*53 );
+    }
+    .pier_complex-container-6 {
+        left: calc( var(--container-w-center) );
+        
+        top: calc( var(--grid)/2 + var(--grid)*100);
     }
 
     /* serengeti_village */
