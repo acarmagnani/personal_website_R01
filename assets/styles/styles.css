@@ -417,12 +417,12 @@ li {
     .whoami-container-1 {
         left: calc( var(--container-w-center) + (var(--grid)*9) );
 
-        top: calc( var(--grid)/2 + var(--grid)*13 );
+        top: calc( var(--grid)/2 + var(--grid)*16);
     }
     .whoami-container-2 {
         left: calc( var(--container-w-center) - (var(--grid)*12) );
         
-        top: calc( var(--grid)/2 + var(--grid)*24 );
+        top: calc( var(--grid)/2 + var(--grid)*12 );
     }
 
     /* projects */
@@ -602,17 +602,17 @@ li {
 .serengeti_village-container-2 {
     left: calc( var(--container-w-center) );
     
-    top: calc( var(--grid)/2 + var(--grid)*60 );
+    top: calc( var(--grid)/2 + var(--grid)*65 );
 }
 .serengeti_village-container-3 {
     left: calc( var(--container-w-center) );
     
-    top: calc( var(--grid)/2 + var(--grid)*88 );
+    top: calc( var(--grid)/2 + var(--grid)*98 );
 }
 .serengeti_village-container-4 {
     left: calc( var(--container-w-center) );
     
-    top: calc( var(--grid)/2 + var(--grid)*98 );
+    top: calc( var(--grid)/2 + var(--grid)*115 );
 }
 
 /* precint */
@@ -624,24 +624,24 @@ li {
 .precint-container-2 {
     left: calc( var(--container-w-center) );
     
-    top: calc( var(--grid)/2 + var(--grid)*68 );
+    top: calc( var(--grid)/2 + var(--grid)*80 );
 }
 .precint-container-3 {
     left: calc( var(--container-w-center) );
     
-    top: calc( var(--grid)/2 + var(--grid)*50 );
+    top: calc( var(--grid)/2 + var(--grid)*58 );
 }
 .precint-container-4 {
     left: calc( var(--container-w-center) );
     
-    top: calc( var(--grid)/2 + var(--grid)*97 );
+    top: calc( var(--grid)/2 + var(--grid)*110 );
 }
 
 /* gallery */
 .gallery-container-1 {
     left: calc( var(--container-w-center) );
     
-    top: calc( var(--grid)/2 + var(--grid)*28 );
+    top: calc( var(--grid)/2 + var(--grid)*30 );
 }
 .gallery-container-2 {
     left: calc( var(--container-w-center) );
@@ -651,7 +651,12 @@ li {
 .gallery-container-3 {
     left: calc( var(--container-w-center) );
     
-    top: calc( var(--grid)/2 + var(--grid)*60 );
+    top: calc( var(--grid)/2 + var(--grid)*80 );
+}
+.gallery-container-4 {
+    left: calc( var(--container-w-center) );
+    
+    top: calc( var(--grid)/2 + var(--grid)*65 );
 }
 
 @media (min-width: 650px) {
@@ -756,19 +761,19 @@ li {
         
         left: calc( var(--container-proj-w-center) );
         
-        top: calc( var(--grid)/2 + var(--grid)*65 );
+        top: calc( var(--grid)/2 + var(--grid)*70 );
     }
     .serengeti_village-container-4 {
         left: calc( var(--container-w-center) - var(--grid)*4 );
 
-        top: calc( var(--grid)/2 + var(--grid)*82 );
+        top: calc( var(--grid)/2 + var(--grid)*92 );
     }
 
     /* precint */
     .precint-container-2 {
         left: calc( var(--container-w-center) - (var(--grid)*4) );
 
-        top: calc( var(--grid)/2 + var(--grid)*55 );
+        top: calc( var(--grid)/2 + var(--grid)*60 );
     }
     .precint-container-3 {
         top: calc( var(--grid)/2 + var(--grid)*37 );
@@ -778,14 +783,14 @@ li {
         
         left: calc( var(--container-proj-w-center) );
 
-        top: calc( var(--grid)/2 + var(--grid)*72 );
+        top: calc( var(--grid)/2 + var(--grid)*80 );
     }
 
     /* gallery */
     .gallery-container-1 {
         left: calc( var(--container-w-center) - (var(--grid)*4) );
 
-        top: calc( var(--grid)/2 + var(--grid)*30 );
+        top: calc( var(--grid)/2 + var(--grid)*35 );
     }
     .gallery-container-2 {
         width: var(--container-proj-w);
@@ -799,7 +804,12 @@ li {
 
         left: calc( var(--container-proj-w-center) );
 
-        top: calc( var(--grid)/2 + var(--grid)*47 );
+        top: calc( var(--grid)/2 + var(--grid)*70 );
+    }
+    .gallery-container-4 {
+        left: calc( var(--container-w-center) + var(--grid)*3 );
+        
+        top: calc( var(--grid)/2 + var(--grid)*55 );
     }
 
 }
@@ -934,6 +944,11 @@ li {
         left: calc( var(--container-proj-w-center) + (var(--grid)*10) );
 
         top: calc( var(--grid)/2 + var(--grid)*30 );
+    }
+    .gallery-container-4 {
+        left: calc( var(--container-w-center) - var(--grid)*15 );
+        
+        top: calc( var(--grid)/2 + var(--grid)*40 );
     }
 }
 
