@@ -93,8 +93,13 @@ blockquote, q {
     content: "\2191 \FE0E";
 }
 
+@font-face {
+    font-family: "Roboto Mono";
+    src: url(../../fonts/RobotoMono-Light.ttf);
+}
+
 body {
-    font-family: "Input Sans", monospace;
+    font-family: "Roboto Mono";
     color: var(--c-txt);
 
     background: 
@@ -122,7 +127,7 @@ body {
     --border: 1px;
     --pad: 10px;
 
-    --container-w: calc(var(--grid)*16);
+    --container-w: calc(var(--grid)*18);
     --container-w-center: calc( 50% - (var(--container-w)/2) );
     --container-proj-w: calc(var(--grid)*26);
     --container-proj-w-center: calc( 50% - (var(--container-proj-w)/2) );
@@ -214,6 +219,7 @@ li {
     display: inline-block;
     transition-duration: var(--def-duraton);
 	transition-property: transform;
+    cursor: pointer;
 	
 	&:hover {	
 		transform: rotate(5deg);
@@ -225,6 +231,7 @@ li {
 ._spread {
     transition-duration: var(--def-duraton);
     transition-property: letter-spacing;
+    cursor: pointer;
 
     &:hover {
         letter-spacing: 3px;
@@ -310,7 +317,7 @@ li {
 
 /* explore */
 .explore-container {
-    left: calc( var(--container-w-center) - (var(--grid)*2) );
+    left: calc( var(--container-w-center) - (var(--grid)*1) );
     
     top: calc( var(--grid)/2 + var(--grid)*26 );
 }
