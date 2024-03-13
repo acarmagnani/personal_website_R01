@@ -131,16 +131,16 @@ body {
 
 /* fonts */
 h1 {
-    font-size: 1rem;
+    font-size: 1.3rem;
     font-style: italic;
 }
 
 h2 {
-    font-size: .7rem;
+    font-size: .8rem;
 }
 
 b1 {
-    font-size: .6rem;
+    font-size: .7rem;
 }
 
 @media (min-width: 650px) {
@@ -161,15 +161,15 @@ b1 {
 
     /* fonts */
     h1 {
-        font-size: 1.5rem;
+        font-size: 1.75rem;
     }
 
     h2 {
-        font-size: .75rem;
+        font-size: 1rem;
     }
 
     b1 {
-        font-size: .7rem;
+        font-size: .8rem;
     }
 }
 
@@ -177,15 +177,15 @@ b1 {
 
     /* fonts */
     h1 {
-        font-size: 1.65rem;
+        font-size: 2rem;
     }
 
     h2 {
-        font-size: .8rem;
+        font-size: 1rem;
     }
 
     b1 {
-        font-size: .75rem;
+        font-size: .9rem;
     }
 }
 
@@ -271,6 +271,7 @@ li {
 .container {
     position: absolute;
     border: var(--border) dashed var(--c-txt);
+    box-shadow: rgb(255, 255, 255) -5px 5px;
 
     box-sizing: border-box;
 
@@ -361,7 +362,7 @@ li {
 
     /* lang */
     .lang-container {
-        width: calc(var(--grid)*4);
+        width: calc(var(--grid)*5);
 
         left: calc( var(--container-w-center) + (var(--grid)*15 ) );
 
@@ -426,9 +427,7 @@ li {
     }
 
     /* projects */
-    .project-container-1 {
-        top: calc( var(--grid)/2 + var(--grid)*10 );
-    }
+
 
     /* experience */
     .experience-container-1 {
