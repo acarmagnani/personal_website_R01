@@ -329,7 +329,7 @@ li {
     top: calc( var(--grid)/2 + var(--grid)*24 );
 }
 .whoami-container-2 {
-    left: calc( var(--container-w-center) - (var(--grid)*2) );
+    left: calc( var(--container-w-center) - (var(--grid)*1) );
     
     top: calc( var(--grid)/2 + var(--grid)*18 );
 }
@@ -338,19 +338,19 @@ li {
 .project-container-1 {
     left: calc( var(--container-w-center) );
     
-    top: calc( var(--grid)/2 + var(--grid)*17 );
+    top: calc( var(--grid)/2 + var(--grid)*18 );
 }
 
 /* experience */
 .experience-container-1 {
     left: calc( var(--container-w-center) );
     
-    top: calc( var(--grid)/2 + var(--grid)*17 );
+    top: calc( var(--grid)/2 + var(--grid)*20 );
 }
 .experience-container-2 {
     left: calc( var(--container-w-center) );
     
-    top: calc( var(--grid)/2 + var(--grid)*93 );
+    top: calc( var(--grid)/2 + var(--grid)*115 );
 }
 
 /* contact */
@@ -373,7 +373,7 @@ li {
 
         left: calc( var(--container-w-center) + (var(--grid)*15 ) );
 
-        top: calc( var(--grid)/2 + var(--grid)*10 );
+        top: calc( var(--grid)/2 + var(--grid)*12 );
     }
 
     /* explore */
@@ -383,30 +383,30 @@ li {
 
     /* whoami */
     .whoami-container-1 {
-        top: calc( var(--grid)/2 + var(--grid)*17 );
+        top: calc( var(--grid)/2 + var(--grid)*20 );
     }
     .whoami-container-2 {
         left: calc( var(--container-w-center) - (var(--grid)*4) );
         
-        top: calc( var(--grid)/2 + var(--grid)*11 );
+        top: calc( var(--grid)/2 + var(--grid)*14 );
     }
 
     /* projects */
     .project-container-1 {
-        top: calc( var(--grid)/2 + var(--grid)*14 );
+        top: calc( var(--grid)/2 + var(--grid)*16 );
     }
 
     /* experience */
     .experience-container-2 {
-        top: calc( var(--grid)/2 + var(--grid)*60 );
+        top: calc( var(--grid)/2 + var(--grid)*70 );
     }
     
     /* contact */
     .contact-container-1 {
-        top: calc( var(--grid)/2 + var(--grid)*14 );
+        top: calc( var(--grid)/2 + var(--grid)*17 );
     }
     .contact-container-2 {
-        top: calc( var(--grid)/2 + var(--grid)*21 );
+        top: calc( var(--grid)/2 + var(--grid)*24 );
     }
 }
 
@@ -452,7 +452,7 @@ li {
     .contact-container-1 {
         left: calc( var(--container-w-center) + (var(--grid)*15) );
 
-        top: calc( var(--grid)/2 + var(--grid)*11 );
+        top: calc( var(--grid)/2 + var(--grid)*12 );
     }
     .contact-container-2 {
         left: calc( var(--container-w-center) - (var(--grid)*15) );
